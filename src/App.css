@@ -1,0 +1,70 @@
+#form-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.44); */
+    background-color: #cebfe9;
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    width: 40%;
+    height: 50%;
+    min-width: 300px;
+    max-height: 400px;
+    border: 5px solid #BFDCE5;
+    background-color: #3E54AC;
+    box-shadow: 10px 10px 15px #3E54AC;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.xchange-form {
+    width: 99%;
+    height: 75%;
+    margin: auto;
+    background-color: #BFDCE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:9px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: beige;
+}
+
+.input-value, .coin-select{
+    margin: 15px;
+    width: 60%;
+    transform: scale(1.2);
+}
+
+.coin-select-container {
+    margin: 15px;
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-input {
+    border: 2px solid gray;
+}
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-input:hover {
+    border: 2px solid rgb(64 150 255);
+}
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {
+    border: 2px solid gray;
+    color: gray;
+}
+
+:where(.css-dev-only-do-not-override-1vtf12y).ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+    border: 2px solid rgb(64 150 255);
+}
