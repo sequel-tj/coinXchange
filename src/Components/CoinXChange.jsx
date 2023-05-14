@@ -40,7 +40,7 @@ function CoinXChange() {
     }
 
     useEffect(() => {
-        if (cryptoList.length == 0) return;
+        if (cryptoList.length === 0) return;
 
         const firstSelectData = cryptoList.find((item) => {
             return item.value === selectFirst;
@@ -51,7 +51,8 @@ function CoinXChange() {
         });
 
         let rate = firstSelectData.rate/secondSelectData.rate;
-        setOutputValue(rate*inputValue);
+        // setOutputValue(rate*inputValue);
+        setOutputValue(secondSelectData.rate);
         setSelectFirstUnit(firstSelectData.unit);
         setSelectSecondUnit(secondSelectData.unit);
 
