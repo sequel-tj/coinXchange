@@ -50,13 +50,13 @@ function CoinXChange() {
             return item.value === selectSecond;
         });
 
-        let rate = firstSelectData.rate/secondSelectData.rate;
-        // setOutputValue(rate*inputValue);
-        setOutputValue(secondSelectData.rate);
+        let rate = firstSelectData.rate*secondSelectData.rate;
+        setOutputValue(rate);
         setSelectFirstUnit(firstSelectData.unit);
         setSelectSecondUnit(secondSelectData.unit);
-
+        // setOutputValue(rate*inputValue);
         // console.log(firstSelectRate, secondSelectRate);
+        
     }, [inputValue, selectFirst, selectSecond]);
         
 
